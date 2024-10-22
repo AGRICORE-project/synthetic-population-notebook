@@ -1,0 +1,10 @@
+*.pyc
+.vscode/
+__pycache__/
+results/
+synthetic_population/
+complete_execution/.RData
+complete_execution/.Rhistory
+y_synth_numerical.csv
+*.png
+*/st

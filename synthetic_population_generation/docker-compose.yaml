@@ -1,0 +1,16 @@
+version: '3'
+services:
+  agricore-jupyter-synthetic-population:
+    image: agricore-synthetic-population-jupyter-image:latest
+    container_name: agricore-jupyter-synthetic-population
+    # build: 
+    #   context: .
+    environment:
+      - GRANT_SUDO=yes
+    user: root
+    volumes:
+      - /home/agricore/AGRICORE-synthetic-population-notebook/:/home/jovyan/work/carlos
+    ports:
+      - 8889:8888
+    command: "start-notebook.sh --NotebookApp.token=agricore"
+    restart: always

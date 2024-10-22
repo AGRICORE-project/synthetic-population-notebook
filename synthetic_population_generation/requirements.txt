@@ -1,0 +1,10 @@
+jupyter
+scikit-learn
+pandas
+numpy
+scipy
+jupyter
+rpy2
+pydantic==1.10.9
+requests
+agricore_sp_models==0.5.80
